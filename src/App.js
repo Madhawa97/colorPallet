@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import MainBox from './components/MainBox';
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <MainBox color={'some'} />
+    <h1> Select color</h1>
+    <div style={{display: 'flex'}}>
+      <div style={{backgroundColor: 'red', height: 50, width: 50}}></div>
+      <div style={{backgroundColor: 'yellow', height: 50, width: 50}}></div>
+      <div style={{backgroundColor: 'green', height: 50, width: 50}}></div>
+      <div style={{backgroundColor: 'blue', height: 50, width: 50}}></div>
+      <div style={{backgroundColor: 'orange', height: 50, width: 50}}></div>
+      <div style={{backgroundColor: 'black', height: 50, width: 50}}></div>
     </div>
+    </>
   );
+  
 }
 
 export default App;
